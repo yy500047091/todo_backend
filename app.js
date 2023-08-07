@@ -5,7 +5,7 @@ import taskRouter from"./routes/task.js";
 import  {config } from "dotenv";
 import cookieParser from "cookie-parser";
 import { errorMiddleware } from "./controllers/middleware/error.js";
-import cors from cors;
+import cors from "cors";
 
 
 config({
