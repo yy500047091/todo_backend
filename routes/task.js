@@ -10,7 +10,7 @@ router.post("/new",isAuthenticated, newTask);
 
 router.get("/mytask",isAuthenticated, getMyTask);
 
-router.get("/mytask",isAuthenticated, updateTask);
+
 router.route("/:id")
            .put(isAuthenticated,updateTask)
               .delete(isAuthenticated,deleteTask,(req,res,next)=>{
